@@ -121,7 +121,7 @@ function HdfcPage() {
       <Section
         id="overview"
         eyebrow="01 — Portfolio Overview"
-        heading="Five flagship products. One coherent experience direction."
+        heading="Mltiple flagship products. One coherent experience direction."
       >
         <div className="grid gap-10 md:grid-cols-2 max-w-5xl">
           <p className="text-lg text-ink-soft leading-relaxed">
@@ -139,14 +139,7 @@ function HdfcPage() {
             of them down.
           </p>
         </div>
-        <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-          {products.map((p) => (
-            <div key={p.name} className="border border-rule p-5 bg-secondary/30">
-              <p className="eyebrow mb-2">{p.tag}</p>
-              <p className="font-serif text-xl">{p.name}</p>
-            </div>
-          ))}
-        </div>
+        
       </Section>
 
       {/* 2. My Contribution */}
