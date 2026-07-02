@@ -5,7 +5,7 @@ import { CaseStudyDisclaimer } from "@/components/site/CaseStudyDisclaimer";
 import { ExpandableImage } from "@/components/site/ExpandableImage";
 import mobileBanking from "@/assets/hdfc/mobile-banking.png";
 import mycards from "@/assets/hdfc/mycards.png";
-import smartpay from "@/assets/hdfc/smartpay.png";
+import smartpay from "@/assets/hdfc/smartPay.png";
 
 export const Route = createFileRoute("/experience/hdfc")({
   component: HdfcPage,
