@@ -121,7 +121,7 @@ function HdfcPage() {
       <Section
         id="overview"
         eyebrow="01 — Portfolio Overview"
-        heading="Mltiple flagship products. One coherent experience direction."
+        heading="Multiple flagship products. One coherent experience direction."
       >
         <div className="grid gap-10 md:grid-cols-2 max-w-5xl">
           <p className="text-lg text-ink-soft leading-relaxed">
