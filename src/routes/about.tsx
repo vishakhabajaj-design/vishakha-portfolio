@@ -98,14 +98,14 @@ function About() {
         </FadeIn>
       </section>
 
-      <section className="container-editorial py-16 md:py-24">
+      <section className="container-editorial py-8 md:py-12">
         <FadeIn>
           <p className="eyebrow">What shapes my work</p>
           <h2 className="mt-4 font-serif text-3xl md:text-5xl leading-tight max-w-3xl">
             Five principles that guide every engagement.
           </h2>
         </FadeIn>
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {shapingCards.map((card, i) => (
             <FadeIn key={card.title} delay={i * 0.05}>
               <Card className="h-full border border-rule bg-paper shadow-none hover:border-ink-soft transition-colors">
@@ -123,7 +123,7 @@ function About() {
       </section>
 
       <section className="border-t border-rule bg-secondary/40">
-        <div className="container-editorial py-20 md:py-24">
+        <div className="container-editorial py-8 md:py-12">
           <FadeIn>
             <div className="grid gap-10 md:grid-cols-[1fr_2fr]">
               <div>
@@ -144,14 +144,14 @@ function About() {
         </div>
       </section>
 
-      <section className="container-editorial py-20 md:py-28">
+      <section className="container-editorial py-8 md:py-12">
         <FadeIn>
           <p className="eyebrow">Experience at a glance</p>
           <h2 className="mt-4 font-serif text-3xl md:text-5xl leading-tight max-w-3xl">
             A measure of depth, range and consistency.
           </h2>
         </FadeIn>
-        <div className="mt-14 grid gap-px bg-rule border border-rule md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid gap-px bg-rule border border-rule md:grid-cols-2 lg:grid-cols-4">
           {metrics.map((m, i) => (
             <FadeIn key={m} delay={i * 0.03}>
               <div className="bg-paper p-8 md:p-10 h-full flex items-center">
@@ -163,10 +163,10 @@ function About() {
       </section>
 
       <section className="border-t border-rule">
-        <div className="container-editorial py-20 md:py-28">
+        <div className="container-editorial py-8 md:py-12">
           <FadeIn>
             <p className="eyebrow">Closing thought</p>
-            <p className="mt-6 font-serif text-3xl md:text-5xl leading-[1.12] max-w-4xl">
+            <p className="mt-6 font-serif text-3xl md:text-5xl leading-[1.12] max-w-wmax">
               Design is most valuable when it helps organisations make better decisions—not just better interfaces.
             </p>
             <p className="mt-8 text-ink-soft max-w-2xl leading-relaxed">

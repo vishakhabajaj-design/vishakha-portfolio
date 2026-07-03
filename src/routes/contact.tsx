@@ -59,7 +59,7 @@ function Contact() {
         lede="I enjoy connecting with people who care about clarity, meaningful impact and thoughtful design. If you'd like to explore my work further or discuss how we can shape better experiences together, I'd love to connect."
       />
 
-      <section className="container-editorial pb-20 md:pb-28">
+      <section className="container-editorial pb-20 md:pb-16">
         <FadeIn>
           <ul className="border-t border-rule">
             {items.map((it) => {

@@ -3,7 +3,7 @@ import { Linkedin, Mail } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="mt-8 border-t border-rule bg-paper">
+    <footer className=" border-t border-rule bg-paper">
       <div className="container-editorial py-16 grid gap-10 md:grid-cols-[1.5fr_1fr_1fr]">
         <div>
           <p className="font-serif text-3xl leading-tight max-w-md">

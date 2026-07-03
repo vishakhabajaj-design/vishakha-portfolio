@@ -26,6 +26,7 @@ const projects = [
     client: "Mahindra Finance",
     employer: "IBM",
     tags: ["User Research", "Service Design", "Experience Strategy"],
+    
   },
   {
     to: "/experience/ibm" as const,
@@ -76,35 +77,15 @@ function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="container-editorial pt-16 md:pt-24 pb-20 md:pb-28">
-        <div className="grid gap-12 lg:grid-cols-[1.35fr_1fr] lg:gap-16 items-end">
+      <section className="container-editorial pt-20 md:pt-20 pb-12 md:pb-16">
+        <div className="grid gap-12 lg:grid-cols-[1.35fr_1fr] lg:gap-16 items-start">
           <FadeIn>
             <p className="eyebrow mb-8">Vishakha Bajaj · Experience Design Leader</p>
             <h1 className="font-serif text-[clamp(2.75rem,7vw,6.25rem)] leading-[0.98] tracking-tight">
               Transforming <br />
               <em className="italic text-accent">complexity</em>&nbsp;into experiences people understand and trust.
             </h1>
-            <p className="mt-8 max-w-xl text-lg text-ink-soft leading-relaxed">
-              I design and lead experiences that make financial and digital
-              journeys feel simple. With over 20 years across India, Australia
-              and South Africa, I help organisations turn complexity into
-              intuitive, trustworthy and accessible experiences — grounded in
-              research, collaboration and thoughtful design.
-            </p>
-            <div className="mt-10 flex flex-wrap items-center gap-6">
-              <Link
-                to="/experience"
-                className="inline-flex items-center gap-2 bg-ink text-paper px-6 py-3 text-sm font-medium hover:bg-ink-soft transition-colors"
-              >
-                Explore my work <ArrowRight className="size-4" />
-              </Link>
-              <Link
-                to="/contact"
-                className="text-sm font-medium underline underline-offset-4 decoration-ink-mute hover:decoration-ink"
-              >
-                Get in touch
-              </Link>
-            </div>
+          
           </FadeIn>
           <FadeIn delay={0.1}>
             <div className="relative mx-auto w-full max-w-sm md:max-w-md lg:max-w-none">
@@ -120,31 +101,46 @@ function Home() {
             </div>
           </FadeIn>
         </div>
+        <p className="mt-8 max-w-wmax text-lg text-ink-soft leading-relaxed">
+              I help organisations simplify complex financial and enterprise ecosystems through research, service design and product strategy. Over 20 years across India, Australia and South Africa, I've partnered with global organisations to transform complexity into intuitive, trustworthy experiences.
+            </p>
+            <div className="mt-10 flex flex-wrap items-center gap-6">
+              <Link
+                to="/experience"
+                className="inline-flex items-center gap-2 bg-ink text-paper px-6 py-3 text-sm font-medium hover:bg-ink-soft transition-colors"
+              >
+                Explore my work <ArrowRight className="size-4" />
+              </Link>
+              <Link
+                to="/contact"
+                className="text-sm font-medium underline underline-offset-4 decoration-ink-mute hover:decoration-ink"
+              >
+                Get in touch
+              </Link>
+            </div>
       </section>
 
       {/* SELECTED WORK */}
       <section className="border-t border-rule">
-        <div className="container-editorial py-16 md:py-24">
+        <div className="container-editorial py-16 md:py-16">
           <FadeIn>
             <p className="eyebrow">Work</p>
             <h2 className="mt-4 font-serif text-3xl md:text-5xl leading-tight">
               Selected Work
             </h2>
-            <p className="mt-4 max-w-3xl text-ink-soft leading-relaxed">
+            <p className="mt-4 max-w-wmax text-ink-soft leading-relaxed">
               A curated selection of enterprise consulting engagements demonstrating
               experience strategy, service design, UX leadership and product design.
             </p>
           </FadeIn>
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
             {projects.map((p, i) => (
               <FadeIn key={p.title} delay={i * 0.05}>
                 <Link to={p.to} className="group block h-full">
                   <Card className="h-full flex flex-col">
                     <CardHeader className="p-6 pb-0">
                       <div className="space-y-1">
-                        {p.client && (
-                          <p className="text-xs text-ink-mute">Client · {p.client}</p>
-                        )}
+                        
                         <p className="text-xs text-ink-mute">While at&nbsp;{p.employer}</p>
                       </div>
                       <h3 className="mt-2 font-serif text-2xl md:text-3xl leading-tight">
@@ -189,10 +185,10 @@ function Home() {
 
       {/* PHILOSOPHY */}
       <section className="border-t border-rule bg-secondary/40">
-        <div className="container-editorial py-20 md:py-28">
+        <div className="container-editorial py-20 md:py-16">
           <FadeIn>
             <p className="eyebrow">Design philosophy</p>
-            <p className="mt-6 font-serif text-3xl md:text-5xl leading-[1.12] max-w-4xl">
+            <p className="mt-6 font-serif text-3xl md:text-5xl leading-[1.12] max-w-wmax">
               I don't just design screens — I build scalable systems,
               governance frameworks and foundations that grow with
               organisations. My work is grounded in research, shaped by
@@ -205,14 +201,14 @@ function Home() {
 
       {/* LEADERSHIP HIGHLIGHTS */}
       <section className="border-t border-rule">
-        <div className="container-editorial py-20 md:py-28">
+        <div className="container-editorial py-20 md:py-16">
           <FadeIn>
             <p className="eyebrow">Leadership highlights</p>
             <h2 className="mt-4 font-serif text-3xl md:text-5xl leading-tight max-w-2xl">
               What makes my approach different.
             </h2>
           </FadeIn>
-          <div className="mt-14 grid gap-x-12 gap-y-14 md:grid-cols-2">
+          <div className="mt-6 grid gap-x-12 gap-y-14 md:grid-cols-2">
             {highlights.map((h, i) => (
               <FadeIn key={h.title} delay={i * 0.05}>
                 <div className="border-t border-rule pt-6">
@@ -231,8 +227,8 @@ function Home() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-rule">
-        <div className="container-editorial py-20 md:py-28 text-center">
+      <section className="border-t border-rule bg-secondary/40">
+        <div className="container-editorial py-20 md:py-16 text-center">
           <FadeIn>
             <p className="eyebrow">Explore</p>
             <h2 className="mt-4 font-serif text-4xl md:text-6xl leading-tight">
