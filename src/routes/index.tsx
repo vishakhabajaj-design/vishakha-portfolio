@@ -25,7 +25,7 @@ const projects = [
     subtitle: "Unified Financial Super App",
     client: "Mahindra Finance",
     employer: "IBM",
-    tags: ["User Research", "Service Design", "Experience Strategy"],
+    tags: ["User Research", "Strategy", "Experience Design"],
     
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     subtitle: "Business Banking Transformation",
     client: "Barclays",
     employer: "IBM",
-    tags: ["Customer Lifecycle", "Service Design", "UX Leadership"],
+    tags: ["Service Design", "Journey Orchestration", "Experience Strategy"],
     workstreams: ["Customer Lifecycle Management", "Introducer Referral Experience"],
   },
   {
@@ -43,14 +43,14 @@ const projects = [
     subtitle: "Enterprise Workflow Transformation",
     client: "Standard Bank",
     employer: "Human Factors International",
-    tags: ["Service Design", "Workflow Transformation", "Business Process Design"],
+    tags: ["Enterprise UX", "Workflow Transformation", "Business Process Design"],
   },
   {
     to: "/experience/hdfc" as const,
     title: "HDFC Bank",
     subtitle: "Digital Banking Experiences",
     employer: "HDFC Bank",
-    tags: ["Digital Banking", "Payments & Cards", "Product Design"],
+    tags: ["Product Design", "Experience Design", "Customer Journeys"],
   },
 ];
 
